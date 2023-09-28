@@ -1,0 +1,15 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: clean-architecture-sample
+services:
+  - name: db
+    include: ./tye.dependencies.yaml
+  - name: email
+    include: ./tye.dependencies.yaml
+
+  - name: web
+    project: src/Web/Web.csproj

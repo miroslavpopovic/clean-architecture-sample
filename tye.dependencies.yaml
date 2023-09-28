@@ -1,0 +1,31 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: clean-architecture-sample
+services:
+  - name: db
+    dockerFile: ./build/sqlserver/Dockerfile
+    dockerFileContext: ./build/sqlserver
+    bindings:
+      - name: http
+        port: 51433
+        containerPort: 1433
+        connectionString: Server=${host};Database=CleanArchitectureSample;User Id=CleanArchitectureLogin;Password=Password123;
+    volumes:
+      - source: .data/sqlserver
+        target: /var/opt/mssql/data
+
+  - name: email
+    image: mailhog/mailhog
+    bindings:
+      - name: smtp
+        port: 1025
+        protocol: smtp
+        containerPort: 1025
+      - name: panel
+        port: 8025
+        protocol: http
+        containerPort: 8025
