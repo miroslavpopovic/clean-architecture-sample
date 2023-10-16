@@ -11,5 +11,7 @@ public class TodoItemConfiguration : IEntityTypeConfiguration<TodoItem>
         builder.Property(t => t.Title)
             .HasMaxLength(200)
             .IsRequired();
+        
+        builder.AddAuditColumns();
     }
 }

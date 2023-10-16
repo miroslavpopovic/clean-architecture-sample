@@ -1,6 +1,10 @@
-﻿# CleanArchitectureSample
+﻿# Clean Architecture sample
 
-The project was generated using the [Clean.Architecture.Solution.Template](https://github.com/jasontaylordev/CleanArchitectureSample).
+A sample code for a talk "Clean Architecture with ASP.NET Core". This sample is generated using Jason Taylor's [Clean Architecture Solution Template](https://github.com/jasontaylordev/CleanArchitecture). It is written in .NET 8, using C# 12.
+
+## Presentations
+
+- [October 2023, Network 11](2023-10-network-clean architecture.pptx)
 
 ## Build
 
@@ -57,3 +61,7 @@ dotnet test
 ## Help
 
 To learn more about the template go to the [project website](https://github.com/JasonTaylorDev/CleanArchitectureSample). Here you can find additional guidance, request new features, report a bug, and discuss the template with other users.
+
+## License
+
+See [LICENSE](LICENSE) file.

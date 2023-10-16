@@ -1,6 +1,6 @@
 ﻿namespace CleanArchitectureSample.Domain.Entities;
 
-public class TodoList : BaseAuditableEntity
+public class TodoList : BaseEntity, IAuditable
 {
     public string? Title { get; set; }
 
