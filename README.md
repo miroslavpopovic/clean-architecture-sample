@@ -4,7 +4,7 @@ A sample code for a talk "Clean Architecture with ASP.NET Core". This sample is 
 
 ## Presentations
 
-- [October 2023, Network 11](2023-10-network-clean architecture.pptx)
+- [October 2023, Network 11](2023-10-network-clean-architecture.pptx)
 
 ## Build
 
