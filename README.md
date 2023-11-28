@@ -5,6 +5,7 @@ A sample code for a talk "Clean Architecture with ASP.NET Core". This sample is 
 ## Presentations
 
 - [October 2023, Network 11](2023-10-network-clean-architecture.pptx)
+- [November 2023, Advanced Technology Days 18](2023-11-atd-clean-architecture.pptx)
 
 ## Build
 
